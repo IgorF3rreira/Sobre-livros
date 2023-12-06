@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="img/logo (2).png" type="image/x-icon">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- css externo -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Sobre Livros</title>
+</head>
+
+<body>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-light">
+                    <h5 id="titulo" class="modal-title" id="exampleModalLabel">"Nome do livro"</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="corpo" class="modal-body">
+                    ...
+
+
+                </div>
+                <div class="text-center mt-2 mb-2"> <a target="_blank" id="link" href="" >Link para comprar </a> </div>
+                <div class="modal-footer bg-dark">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cabecalho">
+        <i><img src="img/logo (2).png" class="img-fluid" width="150px" height="170px" alt=""></i>  
+
+   
+    </div>
+
+    <div class="dropdown text-center mt-2">
+        <button class="btn btn-secondary dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categorias
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Alguma ação</a>
+          <a class="dropdown-item" href="#">Outra ação</a>
+          <a class="dropdown-item" href="#">Alguma coisa aqui</a>
+        </div>
+      </div>
+
+    <main class="container mt-4">
+
+        <div class="row  p-2">
+            <div id="livrosDiv" class="col-md-3  text-center mb-2  ">
+                <img src="img/1984.jpg" class="img-fluid h-50" alt="">
+                <h3>1984 </h3>
+
+                <div class="card-footer mt-5"> <button
+                        onclick="livros('George Orwell - 1984',' 1984 é um dos mais importantes romances de ficção científica do século XX. Publicada originalmente em 1949, poucos meses antes da morte do autor, George Orwell, essa sátira política ambientada em uma distopia futurista influencia a literatura até hoje Nesta obra magistral, acompanhamos o drama de Winston Smith, um funcionário do Ministério da Verdade, parte do governo do superestado da Oceania ― que inclui as Américas, a Austrália, a Inglaterra e o sul da África.\n  O estado totalitário comandado pela figura mítica do Grande Irmão controla todos os aspectos da vida de seus cidadãos. No entanto, Smith odeia secretamente o Partido e deseja se rebelar contra o sistema. 1984 foi escolhido pela revista Time como um dos cem melhores romances de língua inglesa e garantiu seu lugar como um clássico da literatura moderna. A obra se afirma como uma valiosa reflexão sobre os malefícios do totalitarismo.', 'https://www.amazon.com.br/1984-Edi%C3%A7%C3%A3o-com-Postais-Marcador/dp/6587034209/ref=asc_df_6587034209/?tag=googleshopp00-20&linkCode=df0&hvadid=379792601405&hvpos=&hvnetw=g&hvrand=3213826360799028724&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001773&hvtargid=pla-1120343041662&psc=1&mcid=fb16b2bc098b3755811f99da7671a6c2'  );"
+                        type="button" data-toggle="modal" data-target="#modalExemplo" class="btn btn-dark  ">
+                        Sobre
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2 ">
+                <img src="img/revolucaoDosBichos.jpg" class="img-fluid h-50 " alt="">
+                <h3>Revolução dos bichos</h3>
+                <div class="card-footer mt-5">
+                    <button
+                        onclick="livros('George Orwell - Revolução dos bichos','Verdadeiro clássico moderno, concebido por um dos mais influentes escritores do século XX, A revolução dos bichos é uma fábula sobre o poder. Narra a insurreição dos animais de uma granja contra seus donos. Progressivamente, porém, a revolução degenera numa tirania ainda mais opressiva que a dos humanos. \nEscrita em plena Segunda Guerra Mundial e publicada em 1945 depois de ter sido rejeitada por várias editoras, essa pequena narrativa causou desconforto ao satirizar ferozmente a ditadura stalinista numa época em que os soviéticos ainda eram aliados do Ocidente na luta contra o eixo nazifascista.De fato, são claras as referências: o despótico Napoleão seria Stálin, o banido Bola-de-Neve seria Trotsky, e os eventos políticos - expurgos, instituição de um estado policial, deturpação tendenciosa da História - mimetizam os que estavam em curso na União Soviética.Com o acirramento da Guerra Fria, as mesmas razões que causaram constrangimento na época de sua publicação levaram A revolução dos bichos a ser amplamente usada pelo Ocidente nas décadas seguintes como arma ideológica contra o comunismo. O próprio Orwell, adepto do socialismo e inimigo de qualquer forma de manipulação política, sentiu-se incomodado com a utilização de sua fábula como panfleto.' , 'https://www.amazon.com.br/revolu%C3%A7%C3%A3o-dos-bichos-conto-fadas/dp/8535909559/ref=pd_bxgy_img_d_sccl_1/142-9756724-2611239?pd_rd_w=VjafR&content-id=amzn1.sym.758f3509-df88-4265-806c-565a738dc05d&pf_rd_p=758f3509-df88-4265-806c-565a738dc05d&pf_rd_r=1SAGGRHB98ZT8BBNWZF0&pd_rd_wg=IBKlL&pd_rd_r=39275f68-aba5-49d3-895f-34d8903fe6d7&pd_rd_i=8535909559&psc=1');"
+                        type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                        Sobre
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2 ">
+                <img src="img/bibliotecaDaMeiaNoite.jpg" class="img-fluid h-50" alt="">
+                <h3>Biblioteca da meia noite</h3>
+                <div class=" card-footer mt-5">
+                    <button
+                        onclick="livros('Matt Haig - Biblioteca da meia noite','A Biblioteca da Meia-Noite é um romance incrível que fala dos infinitos rumos que a vida pode tomar e da busca incessante pelo rumo certo. \n Aos 35 anos, Nora Seed é uma mulher cheia de talentos e poucas conquistas. Arrependida das escolhas que fez no passado, ela vive se perguntando o que poderia ter acontecido caso tivesse vivido de maneira diferente. Após ser demitida e seu gato ser atropelado, Nora vê pouco sentido em sua existência e decide colocar um ponto final em tudo. Porém, quando se vê na Biblioteca da Meia-Noite, Nora ganha uma oportunidade única de viver todas as vidas que poderia ter vivido.Neste lugar entre a vida e a morte, e graças à ajuda de uma velha amiga, Nora pode, finalmente, se mudar para a Austrália, reatar relacionamentos antigos – ou começar outros –, ser uma estrela do rock, uma glaciologista, uma nadadora olímpica... enfim, as opções são infinitas. Mas será que alguma dessas outras vidas é realmente melhor do que a que ela já tem?  Em A Biblioteca da Meia-Noite, Nora Seed se vê exatamente na situação pela qual todos gostaríamos de poder passar: voltar no tempo e desfazer algo de que nos arrependemos. Diante dessa possibilidade, Nora faz um mergulho interior viajando pelos livros da Biblioteca da Meia-Noite até entender o que é verdadeiramente importante na vida e o que faz, de fato, com que ela valha a pena ser vivida.', 'https://www.amazon.com.br/Biblioteca-Meia-Noite-Matt-Haig/dp/6558380544/ref=pd_sim_d_sccl_3_20/142-9756724-2611239?pd_rd_w=oamf3&content-id=amzn1.sym.ce046315-1c04-4597-8eba-e706276d1412&pf_rd_p=ce046315-1c04-4597-8eba-e706276d1412&pf_rd_r=0PT43YE6YN7N00F0VS1P&pd_rd_wg=C3v3i&pd_rd_r=31abb6f2-1a74-4b3e-b5b7-718c2ec01861&pd_rd_i=6558380544&psc=1')"
+                        type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                        Sobre
+
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2">
+                <img src="img/oUltimoReino.jpg" class="img-fluid h-50" alt="">
+                <h3>O ultimo reino</h3>
+                <div class="card-footer mt-5">
+                <button onclick="livros('Bernard Cornwell - O ultimo reino','O ÚLTIMO REINO é o primeiro romance de uma série que contará a história de Alfredo, o Grande, e seus descendentes. Aqui, Cornwell reconstrói a saga do monarca que livrou o território britânico da fúria dos vikings. Pelos olhos do órfão Uthred, que aos 9 anos se tornou escravo dos guerreiros no norte, surge uma história de lealdades divididas, amor relutante e heroísmo desesperado. O ÚLTIMO REINO não se resume a cenas de batalhas bem escritas e reviravoltas cheias de ação e suspense. O livro apresenta os elementos que consagraram Cornwell: história e aventura na dose exata. Uma fábula sobre guerra e heroísmo que encanta do início ao fim', 'https://www.amazon.com.br/%C3%BAltimo-reino-Cr%C3%B4nicas-sax%C3%B4nicas-vol-ebook/dp/B00MV6JA48/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2E7MQPTUIXCB3&keywords=the+last+kingdom&qid=1701804248&s=books&sprefix=the+lask+kingdo%2Cstripbooks%2C185&sr=1-1');" type="button" class=" btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                    Sobre
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+        <div class="row  p-2">
+            <div id="livrosDiv" class="col-md-3  text-center mb-2  ">
+                <img src="img/cristianismoPuroESimples.jpg" class="img-fluid h-50" alt="">
+                <h3>Cristianismo puro e simples</h3>
+
+                <div class="card-footer mt-5"> <button
+                        onclick="livros('C.S Lewis - Cristianismo puro e simples','Em um dos períodos mais sombrios da humanidade, a Segunda Guerra Mundial, C.S. Lewis foi convidado pela BBC a fazer uma série de palestras pelo rádio com o intuito de explicar bases da fé cristã de forma simples e clara. Mais tarde, ajustado pelo próprio Lewis, esse material daria origem a Cristianismo puro e simples, um grande clássico da literatura cristã. \n Na obra mais popular e acessível de seu legado, Lewis apresenta os principais elementos da cosmovisão cristã e seus princípios básicos, gradativamente conduzindo o leitor a temas mais profundos e complexos, provocando reflexão e debate. Nesta edição especial da coleção C.S. Lewis, com capa dura e tradução de uma das maiores especialistas em Lewis do Brasil, você vai encontrar as palavras que encorajaram e fortaleceram milhares de ouvintes em tempos de guerra ― e ainda reverberam mais de 70 anos depois. ' , 'https://www.amazon.com.br/Cristianismo-puro-simples-Gabriele-Greggersen/dp/8578601777/ref=asc_df_8578601777/?tag=googleshopp00-20&linkCode=df0&hvadid=379773628490&hvpos=&hvnetw=g&hvrand=13806981152212410124&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001773&hvtargid=pla-394733037583&psc=1&mcid=a8c47bc0617137bbabaf041cf86beb39');"
+                        type="button" data-toggle="modal" data-target="#modalExemplo" class="btn btn-dark  ">
+                        Sobre
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2 ">
+                <img src="img/guiaDeBolsoContraFeministas.jpg" class="img-fluid h-50 " alt="">
+                <h3>Guia de bolso contra mentiras feministas</h3>
+                <div class="card-footer mt-5">
+                    <button
+                        onclick="livros('Ana Campagnolo - Guia de bolso contra mentiras feminista','As mulheres sempre foram oprimidas e os homens, privilegiados? Toda grande escritora do passado era feminista? Na Idade Média as mulheres eram infelizes? Antes do feminismo, as mulheres não podiam governar, nem trabalhar, nem estudar e nem votar? O feminismo é necessário e representa todas as mulheres? O aborto e o divórcio são conquistas feministas? A teoria de gênero e a linguagem neutra vieram para acabar com os preconceitos e as discriminações? \nPara analisar estes e outros mitos propagados há décadas pelo movimento feminista, Ana Campagnolo reuniu um time de especialistas: Ana Derosa, Catharine Caldeira, Chris Tonietto, Cristiane Corrêa, David Amato, Fernando Pestana, Isaque de Miranda, Lara Brenner, Marlon Derosa, Natália Sulman e Ricardo da Costa Não deveria ser permitido a mulher nenhuma ficar em casa criando seus filhos. As mulheres não deveriam ter essa escolha, justamente porque, enquanto a tiverem, muitas vão optar por ela.  — Simone de Beauvoir \n  Era mais fácil para mim começar o movimento das mulheres do que mudar a minha própria vida. — Betty Friedan\n Você não vale nada como feminista se não admite a glória dos homens. — Camille Paglia \n  Feminismo é puro veneno. — Margaret Thatcher' , 'https://videeditorial.com.br/guia-contra-feministas');"
+                        type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                        Sobre
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2 ">
+                <img src="img/anneFrank.jpg" class="img-fluid h-50" alt="">
+                <h3>O diário de Anne Frank</h3>
+                <div class=" card-footer mt-5">
+                    <button
+                        onclick="livros('Anne Frank - O diário de Anne Frank','O Diário de Anne Frank teve a autenticidade confirmada por peritos. Estudos forenses da caligrafia de Anne e exame do papel do diário, da tinta e da cola comprovaram ser de material existente na época. A conclusão foi oficialmente apresentada pelo Instituto Estatal Holandês para Documentação da Guerra.', 'https://www.amazon.com.br/di%C3%A1rio-Anne-Frank/dp/6550970407/ref=pd_rhf_se_s_pd_crcd_d_sccl_1_40/142-9756724-2611239?pd_rd_w=Ct9H0&content-id=amzn1.sym.1b2190ca-db28-46be-85f8-55611bc8c041&pf_rd_p=1b2190ca-db28-46be-85f8-55611bc8c041&pf_rd_r=3Y7TNW0R448YEFSBFYY7&pd_rd_wg=Vy2Al&pd_rd_r=7f0fbb1e-cb54-4d71-9a1b-f0e94c458e9a&pd_rd_i=6550970407&psc=1')"
+                        type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                        Sobre
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2">
+                <img src="img/arseneLupin.jpg" class="img-fluid h-50" alt="">
+                <h3>Arsène Lupin, o ladrão de casaca </h3>
+                <div class="card-footer mt-5">
+                <button onclick="livros('Maurice Leblanc - Arsène Lupin, o ladrão de casaca','Arsène Lupin, que conseguiu ser mais famoso que seu criador, nasceu por encomenda do editor Pierre Lafitte ao escritor Maurice Leblanc. Este livro reúne as nove histórias A prisão de Arsène Lupin, Arsne Lupin na prisão, A fuga de Arsène Lupin, O viajante misterioso, `O Colar da Rainha`, O sete de copas, O cofre de Madame Imbert, A pérola negra, Herlock Sholmes chega tarde demais inter-relacionadas, tais como foram publicadas na revista do editor Lafitte, Je sais tout. Quando Arsène Lupin é preso ao descer do navio em Nova Iorque, seu biógrafo já o acompanha, pois Watson sempre acompanhará Sherlock Holmes. A diferença é que aqui é o próprio Maurice Leblanc quem se transforma em personagem para contar as aventuras do protagonista de sua invenção.', 'https://www.amazon.com.br/Ars%C3%A8ne-ladr%C3%A3o-casaca-Maurice-Leblanc/dp/6555524235/ref=asc_df_6555524235/?tag=googleshopp00-20&linkCode=df0&hvadid=379792669361&hvpos=&hvnetw=g&hvrand=11722699414625313400&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001773&hvtargid=pla-1287655589723&psc=1&mcid=efe628c2896b39469b291a60aaaf8ba2');" type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                    Sobre
+                </button>
+            </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <!-- Scripts bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!-- Script personalizado -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
