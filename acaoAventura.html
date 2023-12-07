@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="img/logo (2).png" type="image/x-icon">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- css externo -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Sobre Livros</title>
+</head>
+
+<body>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-light">
+                    <h5 id="titulo" class="modal-title" id="exampleModalLabel">"Nome do livro"</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="corpo" class="modal-body">
+                    ...
+
+
+                </div>
+                <div class="text-center mt-2 mb-2"> <a target="_blank" id="link" href="" >Link para comprar </a> </div>
+                <div class="modal-footer bg-dark">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cabecalho">
+
+        <i> <a href="index.html"> <img src="img/logo (2).png" class="img-fluid" width="150px" height="170px" alt=""> </a> </i>  
+
+   
+    </div>
+
+    <div class="dropdown text-center mt-2">
+        <button class="btn btn-secondary dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categorias
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="index.html">Home</a>
+          <a class="dropdown-item" href="arteFotografia.html">Arte e fotografia</a>
+          <a class="dropdown-item" href="#">Alguma coisa aqui</a>
+        </div>
+      </div>
+
+    <main class="container mt-4">
+
+        <div class="row  p-2">
+            <div id="livrosDiv" class="col-md-3  text-center mb-2 ">
+                <img src="img/aVoltaAoMundo.jpg" class="img-fluid h-50 " alt="">
+                <h3>A volta ao mundo em 80 dias</h3>
+                <div class="card-footer mt-5">
+                    <button
+                        onclick="livros('Júlio Verne - A volta ao mundo em 80 dias','Phileas Fogg, um inglês rico, metódico e um tanto quanto solitário aposta com seus colegas do clube de jogos que conseguirá dar uma volta ao mundo em apenas 80 dias. Para tal feito, o excêntrico Fogg convida seu fiel empregado Jean Passepartout e juntos viverão muitas aventuras.', 'https://www.amazon.com.br/volta-mundo-80-dias/dp/8594318146');"
+                        type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                        Sobre
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2 ">
+                <img src="img/oSenhorDaGuerra.webp" class="img-fluid h-50 " alt="">
+                <h3>O senhor da guerra</h3>
+                <div class="card-footer mt-5">
+                    <button
+                        onclick="livros('Bernard Cornwell - O senhor da guerra','Após anos lutando para recuperar a fortaleza que era sua por direito, Uhtred retornou à Nortúmbria e a tomou de seu tio traiçoeiro. Agora, com seus guerreiros leais e uma nova companheira, a fortaleza de Bebbanburg parece em segurança. Uhtred, entretanto, está longe de gozar da mesma tranquilidade. Para além das muralhas inexpugnáveis de Bebbanburg, tem início uma disputa por poder. Ao sul, o rei Æthelstan unificou os reinos de Wessex, da Mércia e da Ânglia Oriental, e agora tem os olhos voltados para a realização irrevogável do sonho de seu avô Alfredo: a criação de um único reino unificado na Britânia. Enquanto isso, ao norte, o rei Constantino e outros líderes escoceses e irlandeses desejam ampliar suas fronteiras, cientes da ameaça que Æthelstan representa. O jovem monarchus totius Britanniae, o monarca de toda a Britânia, ainda não conquistou a Nortúmbria, o último reino ao norte, as terras que fazem fronteira com a Escócia de Constantino.\n No olho da tempestade está Uhtred. Preso por um juramento a Æthelstan, mas em busca de paz em sua querida Nortúmbria, ele se vê ameaçado e subornado pelos dois lados do conflito, enquanto precisa encarar uma escolha impossível: manter-se longe da disputa, arriscando sua liberdade e a perda da formidável Bebbanburg, ou se lançar na guerra rumo à mais terrível batalha que os reinos já enfrentaram. Só o destino dirá o resultado. O senhor da guerra é o 13º volume das Crônicas Saxônicas. Depois de anos acompanhando a saga de Uhtred para recuperar a fortaleza de Bebbanburg e a luta de Alfredo e seus descendentes em busca da unificação dos reinos da Britânia, temos, enfim, seu desfecho épico: a batalha mais sangrenta travada até então, um dia histórico que pode ser considerado o evento fundador da Inglaterra.' , 'https://www.magazineluiza.com.br/livro-o-senhor-da-guerra-vol-13-cronicas-saxonicas/p/230603300/li/llit/');"
+                        type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                        Sobre
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2 ">
+                <img src="img/sherlockHomesEASabedoriaDosMortos.webp" class="img-fluid h-50" alt="">
+                <h3>Sherlock Holmes e a sabedoria dos mortos</h3>
+                <div class=" card-footer mt-5">
+                    <button
+                        onclick="livros('Rodolfo Martinez - Sherlock Holmes e a sabedoria dos mortos','O maior detetive do mundo e seu narrador mais dedicado. Um manuscrito amaldiçoado composto por um árabe louco. Uma sociedade secreta que reúne eminentes figuras da sociedade inglesa. Uma mensagem cifrada encontrada em um cemitério indígena. Um príncipe que abdicou de seu reino, deixando os círculos místicos europeus em estado de alerta. Todos esses elementos compõem o primeiro volume de Os Arquivos Perdidos de Sherlock Holmes, criado por Rodolfo Martínez, um dos mais importantes nomes da fantasia europeia. Em uma trama de suspense investigativo e aventura sobrenatural, o autor espanhol aproxima a criação máxima de Arthur Conan Doyle do mundo horripilante de H. P. Lovecraft, envolvendo a Ordem da Aurora Dourada, Aleister Crowley e um enigmático monarca, que levarão assombro e misticismo ao universo racional e lógico de Sherlock Holmes e John Watson.', 'https://www.amazon.com.br/Biblioteca-Meia-Noite-Matt-Haig/dp/6558380544/ref=pd_sim_d_sccl_3_20/142-9756724-2611239?pd_rd_w=oamf3&content-id=amzn1.sym.ce046315-1c04-4597-8eba-e706276d1412&pf_rd_p=ce046315-1c04-4597-8eba-e706276d1412&pf_rd_r=0PT43YE6YN7N00F0VS1P&pd_rd_wg=C3v3i&pd_rd_r=31abb6f2-1a74-4b3e-b5b7-718c2ec01861&pd_rd_i=6558380544&psc=1')"
+                        type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                        Sobre
+
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2">
+                <img src="img/oUltimoReino.jpg" class="img-fluid h-50" alt="">
+                <h3>O ultimo reino</h3>
+                <div class="card-footer mt-5">
+                <button onclick="livros('Bernard Cornwell - O ultimo reino','O ÚLTIMO REINO é o primeiro romance de uma série que contará a história de Alfredo, o Grande, e seus descendentes. Aqui, Cornwell reconstrói a saga do monarca que livrou o território britânico da fúria dos vikings. Pelos olhos do órfão Uthred, que aos 9 anos se tornou escravo dos guerreiros no norte, surge uma história de lealdades divididas, amor relutante e heroísmo desesperado. O ÚLTIMO REINO não se resume a cenas de batalhas bem escritas e reviravoltas cheias de ação e suspense. O livro apresenta os elementos que consagraram Cornwell: história e aventura na dose exata. Uma fábula sobre guerra e heroísmo que encanta do início ao fim', 'https://www.amazon.com.br/%C3%BAltimo-reino-Cr%C3%B4nicas-sax%C3%B4nicas-vol-ebook/dp/B00MV6JA48/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2E7MQPTUIXCB3&keywords=the+last+kingdom&qid=1701804248&s=books&sprefix=the+lask+kingdo%2Cstripbooks%2C185&sr=1-1');" type="button" class=" btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                    Sobre
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+        <div class="row  p-2">
+            <div id="livrosDiv" class="col-md-3  text-center mb-2  ">
+                <img src="img/oOlhoDoMundo.jpg" class="img-fluid h-50" alt="">
+                <h3>O olho do mundo</h3>
+
+                <div class="card-footer mt-5"> <button
+                        onclick="livros('Robert Jordan - O Olho do Mundo - Série A Roda do Tempo – Vol. 1','Livro que deu origem à série A Roda do Tempo, superprodução do Amazon Prime Video Um dia houve uma guerra tão definitiva que rompeu o mundo, e no girar da Roda do Tempo o que ficou na memória dos homens virou esteio das lendas. Como a que diz que, quando as forças tenebrosas se reerguerem, o poder de combatê-las renascerá em um único homem, o Dragão, que trará de volta a guerra, e, de novo, tudo se fragmentará. Nesse cenário em que trevas e redenção são igualmente temidas, vive Rand alThor, um jovem de uma vila pacata na região dos Dois Rios. É a época dos festejos de final de inverno — o mais rigoroso das últimas décadas —, e mesmo na agitação que antecipa o festival, chama a atenção a chegada de uma misteriosa forasteira. Quando a vila é invadida por Trollocs, bestas que para a maioria dos homens pertenciam apenas ao universo das lendas, a mulher não só ajuda Rand e seus amigos a escapar dali, como os apresenta àquela que será a maior de todas as jornadas. A desconhecida é uma Aes Sedai, artífice do poder que move a Roda do Tempo, e acredita que Rand seja o profético Dragão Renascido, aquele que poderá salvar ou destruir o mundo.' , 'https://www.amazon.com.br/Olho-Mundo-Livro-roda-tempo/dp/8580573610?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=a+roda+do+tempo&qid=1611686269&sr=8-1&linkCode=sl1&tag=osmelhoresl0b-20&linkId=ae1956213458cce68cb4221aacd863bf&language=pt_BR&ref_=as_li_ss_tl');"
+                        type="button" data-toggle="modal" data-target="#modalExemplo" class="btn btn-dark  ">
+                        Sobre
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2 ">
+                <img src="img/oHobbit.jpg" class="img-fluid h-50 " alt="">
+                <h3>O Hobbit</h3>
+                <div class="card-footer mt-5">
+                    <button
+                        onclick="livros('J.R.R. Tolkien - O Hobbit','Bilbo Bolseiro era um dos mais respeitáveis hobbits de todo o Condado até que, um dia, o mago Gandalf bate à sua porta. A partir de então, toda sua vida pacata e campestre soprando anéis de fumaça com seu belo cachimbo começa a mudar. Ele é convocado a participar de uma aventura por ninguém menos do que Thorin Escudo-de-Carvalho, um príncipe do poderoso povo dos Anãos.\n Esta jornada fará Bilbo, Gandalf e 13 anãos atravessarem a Terra-média, passando por inúmeros perigos, como os imensos trols, as Montanhas Nevoentas infestadas de gobelins ou a muito antiga e misteriosa Trevamata, até chegarem (se conseguirem) na Montanha Solitária. Lá está um incalculável tesouro, mas há um porém. Deitado em cima dele está Smaug, o Dourado, um dragão malicioso que... bem, você terá que ler para descobrir. znLançado em 1937, O Hobbit é um divisor de águas na literatura de fantasia mundial. Mais de 80 anos após a sua publicação, o livro que antecede os ocorridos em O Senhor dos Anéis continua arrebatando fãs de todas as idades, talvez pelo seu tom brincalhão com uma pitada de magia élfica, ou talvez porque J.R.R. Tolkien tenha escrito o melhor livro infantojuvenil de todos os tempos.' , 'https://www.amazon.com.br/Hobbit-p%C3%B4ster-J-R-R-Tolkien/dp/8595084742?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=CLAO9UEJFIPF&keywords=o+hobbit&qid=1676498382&sprefix=o+hobbi,aps,235&sr=8-1&linkCode=sl1&tag=osmelhoresl0b-20&linkId=779a564cf72f86c45dff1619ca99db5b&language=pt_BR&ref_=as_li_ss_tl');"
+                        type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                        Sobre
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2 ">
+                <img src="img/oChamadoDaFloresta.jpg" class="img-fluid h-50" alt="">
+                <h3>O chamado da floresta</h3>
+                <div class=" card-footer mt-5">
+                    <button
+                        onclick="livros('Jack London - O chamado da floresta','Este romance narra as aventuras de Buck, o privilegiado cão doméstico de uma família californiana. Em meio à febre do ouro, Buck é roubado de seu ambiente e contrabandeado para o Alasca. No caminho, sofre uma série de maus tratos até que encontra refúgio em uma irmandade de cães e, como os garimpeiros, vê-se na necessidade de se adaptar à vida selvagem. Buck entra em contato com sua natureza primitiva, em uma jornada de autoconhecimento, e redescobre seus instintos.', 'https://www.amazon.com.br/chamado-floresta-280-Jack-London/dp/8525412236?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=11O8027NZZVXI&keywords=O+Chamado+da+Floresta&qid=1676500496&sprefix=o+chamado+da+floresta,aps,219&sr=8-1&linkCode=sl1&tag=osmelhoresl0b-20&linkId=51ea1b4c66905049ef5607c761018d3d&language=pt_BR&ref_=as_li_ss_tl#detailBullets_feature_div')"
+                        type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                        Sobre
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2">
+                <img src="img/oVelhoEoMar.jpg" class="img-fluid h-50" alt="">
+                <h3>O velho e o mar</h3>
+                <div class="card-footer mt-5">
+                <button onclick="livros('Ernest Hemingway - O velho e o mar','Depois de anos na profissão, havia 84 dias que o velho pescador Santiago não apanhava um único peixe. Por isso já diziam se tratar de um salão, ou seja, um azarento da pior espécie. Mas ele possui coragem, acredita em si mesmo, e parte sozinho para alto-mar, munido da certeza de que, desta vez, será bem-sucedido no seu trabalho. Esta é a história de um homem que convive com a solidão, com seus sonhos e pensamentos, sua luta pela sobrevivência e a inabalável confiança na vida. Com um enredo tenso que prende o leitor na ponta da linha, Hemingway escreveu uma das mais belas obras da literatura contemporânea. Uma história dotada de profunda mensagem de fé no homem e em sua capacidade de superar as limitações a que a vida o submete.\n Com a linguagem simples mas poderosa das fábulas, Hemingway trata de temas universais e atemporais como a perseverança em meio às adversidades e as lições que podemos tirar da derrota neste magnífico clássico do século XX. Escrito em 1952, O velho e o mar venceu o Prêmio Pulitzer de Ficção e foi fator decisivo para a premiação de Hemingway com o Nobel de Literatura em 1954.\nAo lado de contemporâneos como F. Scott Fitzgerald e John Steinbeck, Ernest Hemingway foi um dos escritores mais importantes da chamada “Geração Perdida” e inspirou as gerações subsequentes de escritores americanos.', 'https://www.amazon.com.br/velho-mar-Ernest-Hemingway/dp/852861798X?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3O6HNA5U5VLCR&keywords=o+velho+e+o+mar&qid=1676500611&sprefix=o+velho+e+o+m,aps,217&sr=8-1&linkCode=sl1&tag=osmelhoresl0b-20&linkId=95ac23c32ed977960178e93d3e222e83&language=pt_BR&ref_=as_li_ss_tl');" type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                    Sobre
+                </button>
+            </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <!-- Scripts bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!-- Script personalizado -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

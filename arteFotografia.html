@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link style="cursor: pointer;" rel="shortcut icon" href="img/logo (2).png" type="image/x-icon"> 
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- css externo -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Sobre Livros</title>
+</head>
+
+<body>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-light">
+                    <h5 id="titulo" class="modal-title" id="exampleModalLabel">"Nome do livro"</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="corpo" class="modal-body">
+                    ...
+
+
+                </div>
+                <div class="text-center mt-2 mb-2"> <a target="_blank" id="link" href="" >Link para comprar </a> </div>
+                <div class="modal-footer bg-dark">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cabecalho">
+
+        <i> <a href="index.html"> <img src="img/logo (2).png" class="img-fluid" width="150px" height="170px" alt=""> </a> </i>  
+
+   
+    </div>
+
+    <div class="dropdown text-center mt-2">
+        <button class="btn btn-secondary dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categorias
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="index.html">Home</a>
+          <a class="dropdown-item" href="acaoAventura.html">Ação e aventura</a>
+          <a class="dropdown-item" href="#">Alguma coisa aqui</a>
+        </div>
+      </div>
+
+    <main class="container mt-4">
+
+        <div class="row  p-2">
+            <div id="livrosDiv" class="col-md-3  text-center mb-2  ">
+                <img src="img/AhistoriaDaArte.jpg" class="img-fluid h-50" alt="">
+                <h3>A história da arte</h3>
+
+                <div class="card-footer mt-5"> <button
+                        onclick="livros('Gombrich - A história da arte',' A História da Arte é um dos mais famosos e populares livros sobre arte já publicados. Durante 45 anos, permaneceu incomparável como uma introdução a todo o assunto, das mais antigas pinturas em cavernas à arte experimental de hoje. Leitores de todos os tempos e das mais diversas origens encontram em Ernst Gombrich um verdadeiro mestre, que combina o conhecimento e a sabedoria a um talento excepcional para comunicar seu profundo amor pelas obras de arte que descreve. A História da Arte deve sua duradoura popularidade à objetividade e simplicidade do texto, sem mencionar a habilidade do autor para apresentar uma narrativa fluente. Ele descreve como sendo seu objetivo trazer alguma ordem compreensível à riqueza de nomes, períodos e estilos que preenchem as páginas com as obras mais ambiciosas. Além disso, Gombrich usa sua percepção da psicologia das artes visuais para nos fazer ver a história da arte como uma tela contínua e uma mudança de tradições, em que cada obra reflete o passado e aponta para o futuro. Trata-se de uma corrente viva, que ainda liga o nosso tempo à era das Pirâmides. Em novo formato, a 16ª edição desta obra clássica mantém o progresso triunfante rumo às novas gerações, permanecendo como primeira opção e referência para os iniciantes no mundo da Arte.', 'https://www.amazon.com.br/Hist%C3%B3ria-Arte-H-Gombrich/dp/8521611854');"
+                        type="button" data-toggle="modal" data-target="#modalExemplo" class="btn btn-dark  ">
+                        Sobre
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2 ">
+                <img src="img/issoEarte.jpg" class="img-fluid h-50 " alt="">
+                <h3>Isso é arte</h3>
+                <div class="card-footer mt-5">
+                    <button
+                        onclick="livros('Will Gompertz - Isso é arte?: 150 anos de arte moderna do impressionismo até hoje','Original, irreverente, acessível e tecnicamente impecável, Isso é arte? conduz o leitor por uma excitante viagem através de mais de 150 anos de arte moderna, do impressionismo até os dias de hoje. E não poderia haver guia melhor que o editor de artes da BBC Will Gompertz. Com estilo envolvente - que mescla profundo conhecimento do assunto, ótimo texto e um delicioso senso de humor - ele conta a história dos movimentos, dos artistas e das maravilhosas obras de arte que não apenas mudaram a arte para sempre, mas ajudaram a criar e definir o mundo moderno. Dos nenúfares de Monet aos girassóis de Van Gogh, das latas de sopa de Andy Warhol ao tubarão em conserva de Damien Hirst, fique sabendo as histórias por trás das obras-primas, conheça os artistas e descubra do que realmente se trata a arte moderna.' , 'https://www.amazon.com.br/Isso-%C3%A9-arte-moderna-impressionismo/dp/853781086X/ref=pd_sim_d_sccl_3_1/143-6843610-2830053?pd_rd_w=27E3q&content-id=amzn1.sym.ce046315-1c04-4597-8eba-e706276d1412&pf_rd_p=ce046315-1c04-4597-8eba-e706276d1412&pf_rd_r=YY7AS289G12HP2QN1PM8&pd_rd_wg=NnK2m&pd_rd_r=63c71161-595c-4841-90cf-1a76f2926e1a&pd_rd_i=853781086X&psc=1');"
+                        type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                        Sobre
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2 ">
+                <img src="img/comoOsArtistaVeemOmundo.jpg" class="img-fluid h-50" alt="">
+                <h3>Como os artistas veem o mundo</h3>
+                <div class=" card-footer mt-5">
+                    <button
+                        onclick="livros('Will Gompertz - Como os artistas veem o mundo','Frida Kahlo nos ajuda a ver através da dor. Rembrandt dá uma aula sobre autopercepção. David Hockney abre nossos olhos para a luminosidade da natureza. Jean-Michel Basquiat nos tira da inércia para que possamos ver a realidade em toda a sua complexidade selvagem. Eva Hesse nos mostra o absurdo da vida humana.\n Depois do sucesso de Isso é arte? e Pense como um artista, Will Gompertz agora nos convida a aprender com os grandes artistas como ativar nossa sensibilidade para enxergar o mundo além da nossa visão cotidiana. Enquanto passamos a maior parte do tempo correndo de um lugar para outro e ignorando os maravilhosos fenômenos da vida, os artistas observam o mundo com olhos experientes e interessados. Com seu característico talento de contador de histórias, o autor traça o perfil desses artistas geniais, analisando a maneira única que têm de expressar a vida em sua arte. Das esculturas xochipala a Cy Twombly, de Rubens e Fra Angelico a Georgia O’Keefe e Tracey Emin, descobrimos as inúmeras e potentes formas de enxergar o mundo e traduzi-lo. \n Em linguagem coloquial, sem academicismos e fartamente ilustrado, Como os artistas veem o mundo é um mergulho divertido e esclarecedor na história da arte.', 'https://www.amazon.com.br/Como-os-artistas-veem-mundo/dp/655979119X/ref=pd_sim_d_sccl_3_1/143-6843610-2830053?pd_rd_w=BTa5x&content-id=amzn1.sym.ce046315-1c04-4597-8eba-e706276d1412&pf_rd_p=ce046315-1c04-4597-8eba-e706276d1412&pf_rd_r=S5D0SFWEDG9PT2E1FSBB&pd_rd_wg=vdBnR&pd_rd_r=70320361-07d6-45a7-ab70-c573f19c5439&pd_rd_i=655979119X&psc=1')"
+                        type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                        Sobre
+
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2">
+                <img src="img/aInteracaoDaCor.jpg" class="img-fluid h-50" alt="">
+                <h3>A interação da cor</h3>
+                <div class="card-footer mt-5">
+                <button onclick="livros('Josef Albers - A interação da cor','O livro A interação da cor é um registro de uma maneira experimental de estudar e ensinar a cor. Sua leitura produz um prazer pessoal ilimitado ao mesmo tempo que expande continuamente o modo como as cores são usadas e percebidas na arte, na arquitetura, na tecelagem, no projeto de interiores e na produção visual e gráfica para a mídia impressa em todos os níveis tecnológicos. Prefácio de Bruno Munari.', 'https://www.amazon.com.br/Intera%C3%A7%C3%A3o-cor-Josef-Albers/dp/658601672X/ref=pd_sim_d_sccl_3_3/143-6843610-2830053?pd_rd_w=vQJ1p&content-id=amzn1.sym.ce046315-1c04-4597-8eba-e706276d1412&pf_rd_p=ce046315-1c04-4597-8eba-e706276d1412&pf_rd_r=NMAFY8CZ310W5YR5GMAC&pd_rd_wg=AkOau&pd_rd_r=e1238d90-524d-4a2f-931f-265fa2685472&pd_rd_i=658601672X&psc=1');" type="button" class=" btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                    Sobre
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+        <div class="row  p-2">
+            <div id="livrosDiv" class="col-md-3  text-center mb-2  ">
+                <img src="img/reflexoesSobreAcor.jpg" class="img-fluid h-50" alt="">
+                <h3>Reflexões sobre a cor</h3>
+
+                <div class="card-footer mt-5"> <button
+                        onclick="livros('Marco Giannotti - Reflexões sobre a cor','O Grupo de Pesquisas Cromáticas do Departamento de Artes Plásticas da Universidade de São Paulo se dedica à reflexão sobre o fenômeno cromático como linguagem, onde a cor configura um universo de pesquisa capaz de associar diferentes áreas do conhecimento. O livro reúne uma série de ensaios produzidos ao longo dos anos pelo Grupo que parte da premissa de que a cor é parte indissociável do mundo. Portanto seus processos de uso e percepção carregam marcas próprias de cada época e dos diferentes meios socioculturais.' , 'https://www.amazon.com.br/Reflex%C3%B5es-sobre-cor-Marco-Giannotti/dp/6586016576/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2255Q58KD6V59&keywords=reflex%C3%B5es+sobre+a+cor&qid=1701974242&s=books&sprefix=reflex%C3%B5es+sobre+a+co%2Cstripbooks%2C191&sr=1-1');"
+                        type="button" data-toggle="modal" data-target="#modalExemplo" class="btn btn-dark  ">
+                        Sobre
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2 ">
+                <img src="img/oUniversoDaCor.jpg" class="img-fluid h-50 " alt="">
+                <h3>O universo da cor</h3>
+                <div class="card-footer mt-5">
+                    <button
+                        onclick="livros('Israel Pedrosa - O universo da cor','Pintores, artistas gráficos, programadores visuais, fotógrafos, figurinistas, decoradores, vitrinistas, desenhistas, cenógrafos, estilistas, enfim, todos os profissionais que trabalham com imagens e cores têm aqui um livro exemplar sobre o tema. Israel Pedrosa, artista plástico e pesquisador da cor, convida o leitor para conversar sobre arte, uma conversa em que as cores conduzem a pauta. Numa linguagem simples, ele esclarece este complexo universo: a natureza da cor, como grandes mestres da pintura a trataram, suas harmonias e contrastes e o decálogo do colorista. Com esta publicação, o Senac São Paulo oferece aos leitores um livro estimulante tanto para os olhos quanto para o espírito.' , 'https://www.amazon.com.br/universo-cor-Israel-Pedrosa/dp/8539634112/ref=pd_sbs_d_sccl_3_4/143-6843610-2830053?pd_rd_w=SVmF3&content-id=amzn1.sym.a9d1777a-94a4-4781-9f82-ec1fa264372f&pf_rd_p=a9d1777a-94a4-4781-9f82-ec1fa264372f&pf_rd_r=AVR396JPWY0YV4V6Y0ST&pd_rd_wg=M4cXV&pd_rd_r=67ba8925-c1a6-41a6-9896-d37359ad835d&pd_rd_i=8539634112&psc=1');"
+                        type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                        Sobre
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2 ">
+                <img src="img/paraEntenderUmaFotografia.jpg" class="img-fluid h-50" alt="">
+                <h3>Para entender uma fotografia</h3>
+                <div class=" card-footer mt-5">
+                    <button
+                        onclick="livros(' John Berger - Para entender uma fotografia','Para John Berger ― assim como para Walter Benjamin, Susan Sontag e Roland Barthes ―, a fotografia era uma área de interesse especial, mas não uma especialidade. Eles a abordaram não com a autoridade de curadores ou de historiadores, mas como ensaístas. Para entender uma fotografia reúne 24 ensaios de Berger, organizados cronologicamente e escritos ao longo de mais de quarenta anos. O autor se vale de literatura, filosofia, psicanálise e metafísica para tratar de fotógrafos como Henri Cartier-Bresson, André Kertész e Sebastião Salgado. Berger também se dedica a refletir sobre o lugar da fotografia entre as belas-artes, reler criticamente a obra de Sontag ou enfrentar o dilema que ronda a veiculação de imagens de violência. Para entender uma fotografia foi organizado por Geoff Dyer, também autor de uma introdução em que explica: “À medida que Berger examina fotografias e delas extrai histórias ― tanto as que revela como as que ficam ocultas ―, o papel de crítico e questionador de imagens dá lugar à vocação e ao abraço do contador de histórias”.', 'https://www.amazon.com.br/Para-entender-fotografia-John-Berger/dp/8535929347/ref=asc_df_8535929347/?tag=googleshopp00-20&linkCode=df0&hvadid=379787511086&hvpos=&hvnetw=g&hvrand=6879917309829250543&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001773&hvtargid=pla-333762635410&psc=1&mcid=b7ce15ae23b93686a3d52b23af506432')"
+                        type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                        Sobre
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2">
+                <img src="img/oAtoFotografico.jpg" class="img-fluid h-50" alt="">
+                <h3>O ato fotográfico </h3>
+                <div class="card-footer mt-5">
+                <button onclick="livros('Philippe Dubios - O ato fotográfico','Este livro apresenta que a foto não é apenas uma imagem, é também, antes, um verdadeiro ato irônico, uma imagem, se quisermos, mas em trabalho, algo que não é possivel conceber fora de suas circunstâncias, do jogo que a anima. O meio mecânico, óptico-químico, pretensamente objetivo implica ontologicamente a questão do sujeito em processo.', ' https://www.amazon.com.br/Ato-Fotogr%C3%A1fico-Philippe-Dubois/dp/8530802462/ref=pd_sim_d_sccl_3_6/143-6843610-2830053?pd_rd_w=97601&content-id=amzn1.sym.ce046315-1c04-4597-8eba-e706276d1412&pf_rd_p=ce046315-1c04-4597-8eba-e706276d1412&pf_rd_r=X3377HX3NAXD6RVB0291&pd_rd_wg=JWqer&pd_rd_r=72f07627-da2e-4ca9-b2e8-02aa1a3920d3&pd_rd_i=8530802462&psc=1 ');" type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                    Sobre
+                </button>
+            </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <!-- Scripts bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!-- Script personalizado -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
