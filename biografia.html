@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link style="cursor: pointer;" rel="shortcut icon" href="img/logo (2).png" type="image/x-icon"> 
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- css externo -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Sobre Livros</title>
+</head>
+
+<body>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-light">
+                    <h5 id="titulo" class="modal-title" id="exampleModalLabel">"Nome do livro"</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="corpo" class="modal-body">
+                    ...
+
+
+                </div>
+                <div class="text-center mt-2 mb-2"> <a target="_blank" id="link" href="" >Link para comprar </a> </div>
+                <div class="modal-footer bg-dark">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cabecalho">
+
+        <i> <a href="index.html"> <img src="img/logo (2).png" class="img-fluid" width="150px" height="170px" alt=""> </a> </i>  
+
+   
+    </div>
+
+    <div class="dropdown text-center mt-2">
+        <button class="btn btn-secondary dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categorias
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="index.html">Home</a>
+          <a class="dropdown-item" href="acaoAventura.html">Ação e aventura</a>
+          <a class="dropdown-item" href="arteFotografia.html">Arte e fotografia</a>
+          <a class="dropdown-item" href="#"></a>
+        </div>
+      </div>
+
+    <main class="container mt-4">
+
+        <div class="row  p-2">
+            <div id="livrosDiv" class="col-md-3  text-center mb-2  ">
+                <img src="img/emBuscaDeMim.jpg" class="img-fluid h-50" alt="">
+                <h3>AEm busca de mim</h3>
+
+                <div class="card-footer mt-5"> <button
+                        onclick="livros('Em busca de mim - Viola Davis',' Em busca de mim conta a minha história, de um apartamento caindo aos pedaços na cidade de Central Falls, em Rhode Island, para os palcos de Nova York e além. Este é o caminho que percorri em busca de propósito e força, mas também para me fazer ser ouvida em um mundo que não me percebia.Enquanto escrevia Em busca de mim, pensei no quanto nossas histórias nem sempre recebem a devida atenção. São reinventadas para serem encaixadas em um mundo louco, competitivo e crítico. Escrevi este livro para aqueles que se sentem excluídos, que estão em busca de uma forma de entender e superar um passado complicado e encontrar autoaceitação no lugar da vergonha.Escrevi para quem precisa se lembrar de que a vida só vale a pena ser vivida se a encararmos com honestidade radical e coragem de abandonar as máscaras e apenas ser... você.Em busca de mim é uma reflexão profunda, uma promessa e uma declaração de amor a mim mesma. Espero que minha história o inspire a revolucionar sua vida de forma criativa e a redescobrir quem você era antes que o mundo tentasse defini-lo.',' https://www.amazon.com.br/Em-busca-mim-Viola-Davis/dp/6557121383');"
+                        type="button" data-toggle="modal" data-target="#modalExemplo" class="btn btn-dark  ">
+                        Sobre
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2 ">
+                <img src="img/aMulherEmMim.jpg" class="img-fluid h-50 " alt="">
+                <h3>A mulher em mim</h3>
+                <div class="card-footer mt-5">
+                    <button
+                        onclick="livros(' Britne Spears - A mulher em mim ', 'A mulher em mim é uma história corajosa e surpreendentemente comovente sobre liberdade, fama, maternidade, sobrevivência, fé e esperança. Em junho de 2021, o mundo inteiro ouvia Britney Spears falar, publicamente, em uma corte perante uma juíza. O impacto ao compartilhar a sua voz ― a sua verdade ― foi inegável e mudou o curso tanto de sua vida como a de inúmeras outras pessoas. A mulher em mim revela pela primeira vez a incrível jornada e a força interior de uma das maiores artistas da história da música pop. Extraordinariamente escrita de forma sincera, direta e humorada, a inovadora autobiografia de Britney Spears esclarece o poder duradouro da música e do amor ― e a importância de uma mulher contar a sua própria história, em seus próprios termos, finalmente.' , 'https://www.amazon.com.br/dp/6553932573/ref=sspa_dk_detail_4?psc=1&pd_rd_i=6553932573&pd_rd_w=sfDMJ&content-id=amzn1.sym.dd14805d-2347-4e14-a8a3-4a68eee2b6c8&pf_rd_p=dd14805d-2347-4e14-a8a3-4a68eee2b6c8&pf_rd_r=CCTGPDH0HAZZ4E1D2G3M&pd_rd_wg=XV1sx&pd_rd_r=a4e530d1-ec2e-4065-be2f-311f395b7eb2&s=books&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw');
+                         "
+                        type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                        Sobre
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2 ">
+                <img src="img/aAltobiografiaMartinLuther.jpg" class="img-fluid h-50" alt="">
+                <h3>A autobiografia de Martin Luther King</h3>
+                <div class=" card-footer mt-5">
+                    <button
+                        onclick="livros(' Martin Luther King - A autobiografia de Martin Luther King ','Frida Kahlo nos ajuda a ver através da dor. Rembrandt dá uma aula sobre autopercepção. David Hockney abre nossos olhos para a luminosidade da natureza. Jean-Michel Basquiat nos tira da inércia para que possamos ver a realidade em toda a sua complexidade selvagem. Eva Hesse nos mostra o absurdo da vida humana.\n Depois do sucesso de Isso é arte? e Pense como um artista, Will Gompertz agora nos convida a aprender com os grandes artistas como ativar nossa sensibilidade para enxergar o mundo além da nossa visão cotidiana. Enquanto passamos a maior parte do tempo correndo de um lugar para outro e ignorando os maravilhosos fenômenos da vida, os artistas observam o mundo com olhos experientes e interessados. Com seu característico talento de contador de histórias, o autor traça o perfil desses artistas geniais, analisando a maneira única que têm de expressar a vida em sua arte. Das esculturas xochipala a Cy Twombly, de Rubens e Fra Angelico a Georgia O’Keefe e Tracey Emin, descobrimos as inúmeras e potentes formas de enxergar o mundo e traduzi-lo. \n Em linguagem coloquial, sem academicismos e fartamente ilustrado, Como os artistas veem o mundo é um mergulho divertido e esclarecedor na história da arte.', 'https://www.amazon.com.br/autobiografia-Martin-Luther-King/dp/8537813079/ref=asc_df_8537813079/?tag=googleshopp00-20&linkCode=df0&hvadid=379787555276&hvpos=&hvnetw=g&hvrand=748831409168466216&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001773&hvtargid=pla-811544647570&psc=1&mcid=008b1b582a2c3121827ff43ee71c8bd8')"
+                        type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                        Sobre
+
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2">
+                <img src="img/lincoln.jpg" class="img-fluid h-50" alt="">
+                <h3>Lincoln</h3>
+                <div class="card-footer mt-5">
+                <button onclick="livros(' Doris Kearns Goodwin - Lincoln ','Ao fazer uma análise do estilo de liderança de Abraham Lincoln, da maneira como ele entendia o comportamento humano e das alianças que construiu em seu governo, a premiada historiadora Doris Kearns Goodwin escreveu uma detalhada biografia de um dos mais emblemáticos presidentes norte-americanos. Um livro fundamental para o entendimento da Guerra Civil Americana e seus principais personagens.Além de esmiuçar o caráter e a carreira de Abraham Lincoln, a autora relata também a história dos homens extraordinários que foram seus rivais na indicação para a candidatura à presidência pelo Partido Republicano em 1860: o senador de Nova York William H. Seward, o governador de Ohio Salmon P. Chase, e o sábio e ilustre estadista do Missouri Edward Bates. Seward seria nomeado secretário de Estado, Chase, secretário do Tesouro, e Bates, secretário de Justiça.Nos turbulentos anos 1850, cada um desses homens almejou a presidência dos Estados Unidos enquanto o conflito sobre a escravidão escalava até alcançar inevitavelmente a secessão e a guerra civil. A vitória de Lincoln, conforme mostra Goodwin, foi resultado de uma força de caráter forjada pela experiência que o colocava acima de seus outros concorrentes, mais privilegiados e bem-sucedidos. Venceu porque possuía a habilidade extraordinária de se colocar no lugar de outros homens, viver o que viviam, entender suas motivações e seus desejos. O crescimento do gênio político de Lincoln é revelado na impressionante abundância de documentos deixados por esses concorrentes transformados em colaboradores. Seus diários, declarações a terceiros e cartas trocadas com familiares, amigos e contemporâneos fornecem incontáveis informações e lembranças que tornam a abordagem de Doris coletiva, comparativa e, portanto, totalmente original.', 'https://www.amazon.com.br/Lincoln-Doris-Kearns-Goodwin/dp/8501401358/ref=pd_sim_d_sccl_3_3/139-3385404-8700829?pd_rd_w=bIsZt&content-id=amzn1.sym.49f329c4-c251-477d-b7d9-47fe5683a5e4&pf_rd_p=49f329c4-c251-477d-b7d9-47fe5683a5e4&pf_rd_r=JYEPRRJPSE2YB5WJE0W6&pd_rd_wg=wIQeR&pd_rd_r=5bb0d0da-5af3-445a-9066-33c8e714fa2e&pd_rd_i=8501401358&psc=1') " type="button" class=" btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                    Sobre
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+        <div class="row  p-2">
+            <div id="livrosDiv" class="col-md-3  text-center mb-2  ">
+                <img src="img/tesla.jpg" class="img-fluid h-50" alt="">
+                <h3>Tesla</h3>
+
+                <div class="card-footer mt-5"> <button
+                        onclick="livros('Marko perko - Tesla: A vida e a loucura do gênio que iluminou o mundo ','Nikola Tesla é um ícone da cultura pop e geek, estampando pôsteres e camisetas. Porém, muito mais do que uma imagem icônica, o cientista é considerado o “avô” da informática e dá nome à mais valiosa e controversa corporação global. Suas invenções e descobertas domaram a “misteriosa” eletricidade e suas descobertas impactam nossas vidas até hoje. No entanto, Tesla passou a vida lutando contra um vasto rol de patologias mentais, entre elas o transtorno obsessivo-compulsivo e a bipolaridade. Em Tesla: a vida e a loucura do gênio que iluminou o mundo, o jornalista Marko Perko e o psiquiatra Stephen M. Stahl se unem para desvendar o homem por trás do gênio em uma biografia revolucionária e obrigatória.' , 'https://www.amazon.com.br/Tesla-loucura-g%C3%AAnio-iluminou-mundo/dp/6559870847/ref=pd_sim_d_sccl_3_14/139-3385404-8700829?pd_rd_w=cMfdf&content-id=amzn1.sym.49f329c4-c251-477d-b7d9-47fe5683a5e4&pf_rd_p=49f329c4-c251-477d-b7d9-47fe5683a5e4&pf_rd_r=AWX6X2Y6B9PTMN5AFQ0B&pd_rd_wg=AqVOx&pd_rd_r=b2e017fb-59d6-4e44-b9b9-6f1338829078&pd_rd_i=6559870847&psc=1')"
+                        type="button" data-toggle="modal" data-target="#modalExemplo" class="btn btn-dark  ">
+                        Sobre
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2 ">
+                <img src="img/oUniversoDaCor.jpg" class="img-fluid h-50 " alt="">
+                <h3>Rita Lee</h3>
+                <div class="card-footer mt-5">
+                    <button
+                        onclick="livros('Rita Lee - Rita Lee','“Do primeiro disco voador ao último porre, Rita é consistente. Corajosa. Sem culpa nenhuma. Tanto que, ao ler o livro, várias vezes temos a sensação de estar diante de uma bio não autorizada, tamanha a honestidade nas histórias. A infância e os primeiros passos na vida artística; sua prisão em 1976; o encontro de almas com Roberto de Carvalho; o nascimento dos filhos, das músicas e dos discos clássicos; os tropeços e as glórias.Está tudo lá. E você pode ter certeza: essa é a obra mais pessoal que ela poderia entregar de presente para nós. Rita cuidou de tudo. Escreveu, escolheu as fotos e criou as legendas - e até decidiu a ordem das imagens -, fez a capa, pensou na contracapa, nas orelhas... Entregou o livro assim: prontinho. Sua essência está nessas páginas. E é exatamente desse modo que a Globo Livros coloca a autobiografia da nossa estrela maior no mercado.”' , 'https://www.amazon.com.br/Rita-Lee-Uma-autobiografia/dp/8525063304');"
+                        type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                        Sobre
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2 ">
+                <img src="img/anneFrank.jpg" class="img-fluid h-50" alt="">
+                <h3>O diário de Anne Frank</h3>
+                <div class=" card-footer mt-5">
+                    <button
+                        onclick="livros('Anne Frank - O diário de Anne Frank','O Diário de Anne Frank teve a autenticidade confirmada por peritos. Estudos forenses da caligrafia de Anne e exame do papel do diário, da tinta e da cola comprovaram ser de material existente na época. A conclusão foi oficialmente apresentada pelo Instituto Estatal Holandês para Documentação da Guerra.', 'https://www.amazon.com.br/di%C3%A1rio-Anne-Frank/dp/6550970407/ref=pd_rhf_se_s_pd_crcd_d_sccl_1_40/142-9756724-2611239?pd_rd_w=Ct9H0&content-id=amzn1.sym.1b2190ca-db28-46be-85f8-55611bc8c041&pf_rd_p=1b2190ca-db28-46be-85f8-55611bc8c041&pf_rd_r=3Y7TNW0R448YEFSBFYY7&pd_rd_wg=Vy2Al&pd_rd_r=7f0fbb1e-cb54-4d71-9a1b-f0e94c458e9a&pd_rd_i=6550970407&psc=1')"
+                        type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                        Sobre
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2">
+                <img src="img/napoleao.jpg" class="img-fluid h-50" alt="">
+                <h3>Napoleão: O homem por trás do mito</h3>
+                <div class="card-footer mt-5">
+                <button onclick="livros('Adam Zamoyski - Napoleão: O homem por trás do mito,','Embora exibisse tais características em diversos momentos de sua trajetória, ele não era nada disso. Como Adam Zamoyski nos apresenta nessa biografia, Napoleão era um homem bastante comum. É difícil chamar de gênio o general que comandou o pior (e autoinfligido) desastre da história militar e que destruiu sozinho o grande império que ele e outros lutaram para conquistar. Não é a toa que Napoleão tornou-se uma figura histórica ambígua. Adam Zamoyski analisa seu personagem dentro do contexto da época. Na década de 1790, Napoleão entra em um mundo em guerra, com líderes em busca de poder pela supremacia de seus países e por interesses próprios. O francês não havia começado a guerra, mas ela viria a dominar a sua vida até a sua derradeira derrota, em 1815.', 'https://www.amazon.com.br/Napole%C3%A3o-homem-por-tr%C3%A1s-mito/dp/6555351543/ref=sr_1_5?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1QD3Z564KJXQ4&keywords=biografia&qid=1702490883&s=books&sprefix=biograf%2Cstripbooks%2C294&sr=1-5&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9');" type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                    Sobre
+                </button>
+            </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <!-- Scripts bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!-- Script personalizado -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
