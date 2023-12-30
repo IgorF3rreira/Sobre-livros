@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="img/logo (2).png" type="image/x-icon">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- css externo -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Sobre Livros</title>
+</head>
+
+<body>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-light">
+                    <h5 id="titulo" class="modal-title" id="exampleModalLabel">"Nome do livro"</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="corpo" class="modal-body">
+                    ...
+
+
+                </div>
+                <div class="text-center mt-2 mb-2"> <a target="_blank" id="link" href="" >Link para comprar </a> </div>
+                <div class="modal-footer bg-dark">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cabecalho">
+        <i> <a href="index.html"> <img src="img/logo (2).png" class="img-fluid" width="150px" height="170px" alt=""> </a> </i>  
+
+   
+    </div>
+
+    <div class="dropdown text-center mt-2">
+        <button class="btn btn-secondary dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categorias
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="index.html">Home</a>
+          <a class="dropdown-item" href="acaoAventura.html">Ação e aventura</a>
+          <a class="dropdown-item" href="arteFotografia.html">Arte e fotografia</a>
+          <a class="dropdown-item" href="biografia.html">Biografia</a>
+          <a class="dropdown-item" href="ficcao.html">Ficção</a>
+          
+          
+        </div>
+      </div>
+
+    <main class="container mt-4">
+
+        <div class="row  p-2">
+            <div id="livrosDiv" class="col-md-3  text-center mb-2  ">
+                <img src="img/AsociedadeDoAnel.jpg" class="img-fluid h-50" alt="">
+                <h3> A Sociedade do Anel</h3>
+
+                <div class="card-footer mt-5"> <button
+                        onclick="livros(' J.R.R. Tolkien - O Senhor dos Anéis: A Sociedade do Anel','O volume inicial de O Senhor dos Anéis, lançado originalmente em julho de 1954, foi o primeiro grande épico de fantasia moderno, conquistando milhões de leitores e se tornando o padrão de referência para todas as outras obras do gênero até hoje. A imaginação prodigiosa de J.R.R. Tolkien e seu conhecimento profundo das antigas mitologias da Europa permitiram que ele criasse um universo tão complexo e convincente quanto o mundo real.A Sociedade do Anel começa no Condado, a região rural do oeste da Terra-média onde vivem os diminutos e pacatos hobbits. Bilbo Bolseiro, um dos raros aventureiros desse povo, cujas peripécias foram contadas em O Hobbit, resolve ir embora do Condado e deixa sua considerável herança nas mãos de seu jovem parente Frodo.O mais importante legado de Bilbo é o anel mágico que costumava usar para se tornar invisível. No entanto, o mago Gandalf, companheiro de aventuras do velho hobbit, revela a Frodo que o objeto é o Um Anel, a raiz do poder demoníaco de Sauron, o Senhor Sombrio, que deseja escravizar todos os povos da Terra-média. A única maneira de eliminar a ameaça de Sauron é destruir o Um Anel nas entranhas da própria montanha de fogo onde foi forjado.', 'https://www.amazon.com.br/Senhor-dos-An%C3%A9is-Sociedade-Anel/dp/8595084750');"
+                        type="button" data-toggle="modal" data-target="#modalExemplo" class="btn btn-dark  ">
+                        Sobre
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2 ">
+                <img src="img/AguerraDosTronos1.jpg" class="img-fluid h-50 " alt="">
+                <h3> As Crônicas de Gelo e Fogo, volume 1</h3>
+                <div class="card-footer mt-5">
+                    <button
+                        onclick="livros('George R. R. Martin - A Guerra dos Tronos : As Crônicas de Gelo e Fogo, volume 1','A guerra dos tronos é o primeiro livro da série best-seller internacional As Crônicas de Gelo e Fogo, que deu origem à adaptação de sucesso da HBO, Game of Thrones. O verão pode durar décadas. O inverno, toda uma vida. E a guerra dos tronos começou. Como Guardião do Norte, lorde Eddard Stark não fica feliz quando o rei Robert o proclama a nova Mão do Rei. Sua honra o obriga a aceitar o cargo e deixar seu posto em Winterfell para rumar para a corte, onde os homens fazem o que lhes convém, não o que devem... e onde um inimigo morto é algo a ser admirado. Longe de casa e com a família dividida, Eddard se vê cada vez mais enredado nas intrigas mortais de Porto Real, sem saber que perigos ainda maiores espreitam a distância.Nas florestas ao norte de Winterfell, forças sobrenaturais se espalham por trás da Muralha que protege a região. E, nas Cidades Livres, o jovem Rei Dragão exilado na Rebelião de Robert planeja sua vingança e deseja recuperar sua herança de família: o Trono de Ferro de Westeros.“A guerra dos tronos é a maior obra de fantasia desde que Bilbo encontrou o Anel.” — SF Reviews', 'https://www.amazon.com.br/Guerra-dos-Tronos-Cr%C3%B4nicas-Gelo/dp/8556510787/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3PX8EK1728RX8&keywords=a+guerra+dos+tronos&qid=1703955625&s=books&sprefix=a+guerra+dos+tr%2Cstripbooks%2C284&sr=1-1');"
+                        type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                        Sobre
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2 ">
+                <img src="img/AsCronicasDeNarnia.jpg" class="img-fluid h-50" alt="">
+                <h3>As Crônicas de Nárnia</h3>
+                <div class=" card-footer mt-5">
+                    <button
+                        onclick="livros('C.S Lewis - As Crônicas de Nárnia','Viagens ao fim do mundo, criaturas fantásticas e batalhas épicas entre o bem e o mal - o que mais um leitor poderia querer de um livro? O livro que tem tudo isso é O leão, a feiticeira e o guarda-roupa, escrito em 1949 por Clive Staples Lewis. MasLewis não parou por aí. Seis outros livros vieram depois e, juntos, ficaram conhecidos como As crônicas de Nárnia. Nos últimos cinqüenta anos, As crônicas de Nárnia transcenderam o gênero da fantasia para se tornar parte do cânone da literaturaclássica. Cada um dos sete livros é uma obra-prima, atraindo o leitor para um mundo em que a magia encontra a realidade, e o resultado é um mundo ficcional que tem fascinado gerações. Esta edição apresenta todas as sete crônicas integralmente, num único volume. Os livros são apresentados de acordo com a ordem de preferência de Lewis, cada capítulo com uma ilustração do artista original, Pauline Baynes. Enganosamente simples e direta, As crônicas de Nárnia continuam cativando os leitores com aventuras, personagens e fatos que falam a pessoas de todas as idades.', 'https://www.amazon.com.br/As-Cr%C3%B4nicas-N%C3%A1rnia-Brochura-Lewis/dp/857827069X/ref=sr_1_3?crid=1EDNV3M7RT779&keywords=as+cronicas+de+narnia&qid=1703955924&s=books&sprefix=as+cro%2Cstripbooks%2C571&sr=1-3');"
+                        type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                        Sobre
+
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2">
+                <img src="img/OZ.jpg" class="img-fluid h-50" alt="">
+                <h3>O Maravilhoso Mágico de Oz</h3>
+                <div class="card-footer mt-5">
+                <button onclick="livros('L. Frank Baum - O Maravilhoso Mágico de Oz','Quando a pequena Dorothy contemplava a cinzenta fazenda em que vivia com sua tia Em e seu tio Henry, nem podia imaginar que um ciclone iria arrancá-la dali e levá-la para a mais fabulosa das terras: a terra de Oz, onde um mago poderoso regulava a vida de todos e onde coisas maravilhosas aconteciam. Uma terra cheia de aventuras e perigos, mas também onde Dorothy iria encontrar a verdadeira amizade, na companhia do Espantalho sem cérebro, o Homem de Lata sem coração e o Leão sem coragem. Um do s maiores clássicos da literatura, um livro mágico, que vem encantando novos leitores a cada geração.','https://www.amazon.com.br/Maravilhoso-M%C3%A1gico-Oz-Frank-Baum/dp/8516084930/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1JQ7NHEUHAG1N&keywords=o+maravilhoso+m%C3%A1gico+de+oz&qid=1703957337&s=books&sprefix=o+maravilhoso+magico+de+o%2Cstripbooks%2C315&sr=1-1');" type="button" class=" btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                    Sobre
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+        <div class="row  p-2">
+            <div id="livrosDiv" class="col-md-3  text-center mb-2  ">
+                <img src="img/admiravelMundoNovo.jpg" class="img-fluid h-50" alt="">
+                <h3>As Crônicas Marcianas</h3>
+
+                <div class="card-footer mt-5"> <button
+                        onclick="livros('Ray Bradbury - As Crônicas Marcianas','Publicadas originalmente em revistas de pulp fiction, no final dos anos 1950, nos Estados Unidos, As crônicas marcianas foram reunidas num livro por seu autor, no início dos anos 1960, e interligadas por pequenas costuras narrativas. As crônicas acabaram formando emocionante panorama imaginário da chegada do homem a Marte e da colonização do planeta pela espécie humana. Livro que pode ser visto como um romance fragmentado ou uma seqüência conceitual de contos.','https://www.amazon.com.br/As-Cr%C3%B4nicas-Marcianas-Ray-Bradbury/dp/8525055557/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=10O2FV6T8A80Y&keywords=as+cronicas+marcianas&qid=1703957525&s=books&sprefix=as+cr%C3%B3nicas+marciana%2Cstripbooks%2C318&sr=1-1');"
+                        type="button" data-toggle="modal" data-target="#modalExemplo" class="btn btn-dark  ">
+                        Sobre
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2 ">
+                <img src="img/oUltimoDesejo.jpg" class="img-fluid h-50 " alt="">
+                <h3>O último desejo -The Witcher</h3>
+                <div class="card-footer mt-5">
+                    <button
+                        onclick="livros('Andrzej Sapkowski - O último desejo -The Witcher','Geralt de Rívia é um bruxo sagaz e habilidoso. Um assassino impiedoso e de sangue-frio treinado, desde a infância, para caçar e eliminar monstros. Seu único objetivo: destruir as criaturas do mal que assolam o mundo. Um mundo fantástico criado por Sapkowski com claras influências da mitologia eslava. Um mundo em que nem todos os que parecem monstros são maus e nem todos os que parecem anjos são bons...' , 'https://www.amazon.com.br/%C3%BAltimo-desejo-Witcher-bruxo-Geralt/dp/854690281X/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2QTZQVWA30FCS&keywords=o+ultimo+desejo&qid=1703958019&s=books&sprefix=o+ultimo+desejo%2Cstripbooks%2C280&sr=1-1')"
+                        type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                        Sobre
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2 ">
+                <img src="img/AliceNoPaisDasMaravilhas.jpg" class="img-fluid h-50" alt="">
+                <h3>Alice no País das Maravilhas</h3>
+                <div class=" card-footer mt-5">
+                    <button
+                        onclick="livros('Lewis Carrol - Alice no País das Maravilhas','Alice no País das Maravilhas foi publicado em 1965 e é um clássico da literatura nonsense. Além da história da menina entediada que persegue um coelho branco, há várias passagens no livro que abordam física, filosofia e lógica. A continuação dessa história aparece em outra obra do autor, Alice através do espelho.', 'https://www.amazon.com.br/Alice-no-pa%C3%ADs-das-maravilhas/dp/8538083724/ref=sr_1_4?crid=2T5J7GNP6OKV7&keywords=alice+no+pa%C3%ADs+das+maravilhas&qid=1703957785&s=books&sprefix=alice+n%2Cstripbooks%2C285&sr=1-4');"
+                        type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                        Sobre
+                    </button>
+                </div>
+            </div>
+
+            <div id="livrosDiv" class="col-md-3  text-center mb-2">
+                <img src="img/umaDobraNoTempo.jpg" class="img-fluid h-50" alt="">
+                <h3>Uma dobra no tempo</h3>
+                <div class="card-footer mt-5">
+                <button onclick="livros('Madeleine L. Engle - Uma dobra no tempo','Um clássico da fantasia e da ficção científica emerge! Após uma noite de forte tempestade, uma visita estranha chega à casa da família Murry e convoca Meg, seu irmão Charles Wallace e o amigo deles, Calvin O.Keefe para uma aventura muito perigosa e extraordinária – uma viagem que ameaçará suas vidas e o nosso universo.Uma dobra no tempo é o primeiro da aclamada série em cinco volumes de Madeleine L Engle. Sua adaptação cinematográfica chega às telas em uma megaprodução Disney em março de 2018.',' https://www.amazon.com.br/Uma-dobra-tempo-Madeleine-LEngle-ebook/dp/B0773SM25C/ref=sr_1_2?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=OAWPZQEUUP3O&keywords=uma+dobra+no+tempo&qid=1703958332&s=books&sprefix=uma+dobra+no+temp%2Cstripbooks%2C478&sr=1-2')" type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalExemplo">
+                    Sobre
+                </button>
+            </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <!-- Scripts bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!-- Script personalizado -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
